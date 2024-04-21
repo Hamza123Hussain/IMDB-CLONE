@@ -22,7 +22,7 @@ const Pageination = () => {
   }
 
   return (
-    <div className="flex justify-center items-center mt-7 mb-7">
+    <div className="flex justify-center items-center mt-7 mb-7 px-4">
       <button
         onClick={handlePrevPage}
         disabled={page === 1}
