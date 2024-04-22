@@ -25,8 +25,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="py-4 px-8  dark:bg-black dark:text-white  ">
-      <div className="container mx-auto flex flex-wrap justify-between items-center gap-3  dark:bg-black dark:text-white ">
+    <nav className="py-4 px-8">
+      <div className="container mx-auto flex flex-wrap justify-between items-center gap-3">
         {/* IMDb Logo and Name */}
         <div className="flex items-center justify-between w-full md:w-auto gap-6">
           <a href="/" className="text-2xl font-bold flex items-center">

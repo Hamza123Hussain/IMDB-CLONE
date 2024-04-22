@@ -87,7 +87,7 @@ export default function Trending() {
   }
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {movieData.map((movie) => (
           <MovieCard Movie={movie} key={movie.id} />
         ))}

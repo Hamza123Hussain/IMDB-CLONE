@@ -17,10 +17,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <PageProvider>
           <ThemeProvider attribute="class">
-            <div className=" dark:bg-black dark:text-white ">
-              <Navbar />
-              {children}
-            </div>
+            <Navbar />
+            {children}
           </ThemeProvider>
         </PageProvider>
       </body>
