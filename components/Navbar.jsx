@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="py-4 px-8">
+    <nav className="py-4 px-8 bg-black">
       <div className="container mx-auto flex flex-wrap justify-between items-center gap-3">
         {/* IMDb Logo and Name */}
         <div className="flex items-center justify-between w-full md:w-auto gap-6">
@@ -37,10 +37,16 @@ const Navbar = () => {
             />
           </a>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <Link href="/Trending" className="hover:text-gray-300">
+            <Link
+              href="/Trending"
+              className="hover:text-gray-300 text-xs sm:text-lg"
+            >
               Trending
             </Link>
-            <Link href="/Toprated" className="hover:text-gray-300">
+            <Link
+              href="/Toprated"
+              className="hover:text-gray-300 text-xs sm:text-lg"
+            >
               Top Rated
             </Link>
           </div>
