@@ -21,7 +21,7 @@ const MovieCard = ({ Movie }) => {
                     Movie.poster_path || Movie.backdrop_path
                   }`}
                   alt={Movie.id}
-                  width={300}
+                  width={350}
                   height={100}
                   className=" rounded-xl hover:border-2 hover:border-sky-200 "
                 />
@@ -38,7 +38,7 @@ const MovieCard = ({ Movie }) => {
                   <div className="font-black flex flex-col">
                     <span className="text-yellow-500 text-xl">IMDB SCORE</span>
                     <span className="text-3xl flex gap-x-1 items-center group-hover:text-yellow-600">
-                      {Movie.vote_average}
+                      {Math.round(Movie.vote_average).toFixed(2)}
                     </span>
                   </div>
                 </div>
