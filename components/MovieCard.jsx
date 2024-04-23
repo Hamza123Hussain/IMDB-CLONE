@@ -19,9 +19,9 @@ const MovieCard = ({ Movie }) => {
                     Movie.poster_path || Movie.backdrop_path
                   }`}
                   alt={Movie.id}
-                  width={350}
+                  width={300}
                   height={100}
-                  className=" rounded-xl"
+                  className=" rounded-xl px-2"
                 />
               </div>
 
