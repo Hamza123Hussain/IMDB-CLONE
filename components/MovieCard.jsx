@@ -11,7 +11,7 @@ const MovieCard = ({ Movie }) => {
           key={Movie.id}
           href={`/Movie/${Movie.id}`}
           style={{ borderBottom: '2px solid grey' }}
-          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 rounded-lg hover:border-2 border-gray-100 hover:border-sky-200"
+          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 rounded-lg "
         >
           <div className="mx-auto  shadow-xl sm:w-96 ">
             <div className="grid rounded-3xl h-full flex-col ">
@@ -23,7 +23,7 @@ const MovieCard = ({ Movie }) => {
                   alt={Movie.id}
                   width={300}
                   height={100}
-                  className=" rounded-xl "
+                  className=" rounded-xl hover:border-2 hover:border-sky-200 "
                 />
               </div>
 
