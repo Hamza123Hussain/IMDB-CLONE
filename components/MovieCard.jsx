@@ -6,10 +6,12 @@ const MovieCard = ({ Movie }) => {
   console.log(Movie)
   return (
     <>
-      <div key={Movie.id} className="flex items-center justify-center mt-10  ">
+      <div className="flex items-center justify-center mt-10   ">
         <Link
+          key={Movie.id}
           href={`/Movie/${Movie.id}`}
-          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 rounded-lg border-2 border-gray-100 hover:border-sky-200"
+          style={{ borderBottom: '2px solid grey' }}
+          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 rounded-lg hover:border-2 border-gray-100 hover:border-sky-200"
         >
           <div className="mx-auto  shadow-xl sm:w-96 ">
             <div className="grid rounded-3xl h-full flex-col ">
@@ -21,7 +23,7 @@ const MovieCard = ({ Movie }) => {
                   alt={Movie.id}
                   width={300}
                   height={100}
-                  className=" rounded-xl px-2"
+                  className=" rounded-xl "
                 />
               </div>
 
