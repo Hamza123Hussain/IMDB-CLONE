@@ -11,7 +11,7 @@ export default function DarkModeSwitch() {
   const currentTheme = theme === 'system' ? systemTheme : theme
 
   return (
-    <div>
+    <div className=" relative md:static top-2">
       {currentTheme === 'dark' ? (
         <MdLightMode
           onClick={() => setTheme('light')}

@@ -6,17 +6,14 @@ const MovieCard = ({ Movie }) => {
   console.log(Movie)
   return (
     <>
-      <div
-        key={Movie.id}
-        className="flex items-center justify-center mt-10 px-4 "
-      >
+      <div key={Movie.id} className="flex items-center justify-center mt-10  ">
         <Link
           href={`/Movie/${Movie.id}`}
-          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 hover:border-2 hover:border-sky-200"
+          className="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2 rounded-lg border-2 border-gray-100 hover:border-sky-200"
         >
           <div className="mx-auto  shadow-xl sm:w-96 ">
             <div className="grid rounded-3xl h-full flex-col ">
-              <div className="sm:w-96 h-60 sm:h-80 flex justify-center mt-5 relative">
+              <div className="sm:w-96 h-50 sm:h-80 flex justify-center mt-5  relative">
                 <Image
                   src={`https://image.tmdb.org/t/p/original/${
                     Movie.poster_path || Movie.backdrop_path

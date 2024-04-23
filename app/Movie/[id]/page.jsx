@@ -30,7 +30,7 @@ export default function Movie({ params }) {
     <>
       <div className="flex flex-col justify-center h-screen  items-center my-20 sm:mt-0">
         <div className="dark:bg-black dark:text-white relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
-          <div className="w-full md:w-1/3 bg-white grid place-items-center dark:bg-black dark:text-white">
+          <div className="w-full md:w-1/3 bg-white  grid place-items-center dark:bg-black dark:text-white">
             <Image
               src={`https://image.tmdb.org/t/p/original/${
                 data.poster_path || data.backdrop_pathh

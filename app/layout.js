@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <PageProvider>
           <ThemeProvider attribute="class">
             <Navbar />
-            {children}
+            <div className=""> {children}</div>
           </ThemeProvider>
         </PageProvider>
       </body>
